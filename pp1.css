@@ -1,0 +1,96 @@
+/* Ensure full height and prevent overflow */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden; /* Prevent scrolling */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  .banner {
+      width: 100%;
+      height: 100vh; /* Full height of the viewport */
+      background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url("../images/hostal.jpg");
+      background-size: cover;
+      background-position: center;
+  }
+  
+  img {
+     width: 15%;
+     margin-top: 20px;
+     margin-left: 10px;
+     cursor: pointer;
+  }
+  
+  .logo {
+      width: 100%;
+      margin: auto;
+      padding: 20px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+  
+  .logo ul li {
+      list-style: none;
+      display: inline-block;
+      margin: 0 20px;
+      position: relative;
+  }
+  
+  .logo ul li a {
+      text-decoration: none;
+      color: rgb(248, 252, 251);
+      text-transform: uppercase;
+  }
+  
+  .logo ul li::after {
+      content: ' ';
+      height: 3px;
+      width: 0%;
+      background-color: rgb(240, 220, 250);
+      position: absolute;
+      left: 0%;
+      top: 20px;
+  }
+  
+  .logo ul li:hover::after {
+      width: 100%;
+      transition: 0.5s;
+  }
+  
+  .content {
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      background: linear-gradient(to right, rgb(255, 189, 189), rgb(248, 217, 159), rgb(247, 247, 126), rgb(182, 253, 182), rgb(146, 146, 245), indigo, violet);
+      -webkit-background-clip: text;
+      color: transparent;
+  }
+  
+  .content h2 {
+      font-size: 40px;
+  }
+  
+  .content p {
+      margin: 5px auto;
+      font-weight: 100;
+      line-height: 25px;
+  }
+  
+  button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px 10px;
+    border-radius: 30px;
+    font-weight: bolder;
+    font-size: 15px ;
+  }
